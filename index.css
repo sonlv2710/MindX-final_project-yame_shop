@@ -1,0 +1,317 @@
+/* kéo dài */
+.long_withpictures {
+    position: fixed;
+    left: 0;
+    top: 87px;
+    width: 0;
+    height: 4px;
+    background: #dc3545;
+    z-index: 99999;
+}
+
+/* tìm kiếm */
+
+div .form-control {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    z-index: 9999;
+    display: none;
+
+
+
+}
+
+.clearSearch {
+    font-size: 50px;
+    position: relative;
+    top: -80px;
+    padding-right: 40px;
+}
+
+/* trang chủ */
+.clothes {
+    padding: 0 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 999;
+
+}
+
+.yamenone {
+    display: none;
+}
+
+/* icon */
+
+#main-menu {
+    display: flex;
+    margin-bottom: 0;
+
+
+}
+
+/* logo  */
+.clothes_logo img {
+    width: 120px;
+    height: 90px;
+    padding: 20px;
+}
+
+
+#main-menu li {
+    margin-right: 40px;
+    position: relative;
+
+}
+
+#main-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+
+#main-menu ul.sub-menu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 420px;
+    border-top: 4px solid #dc3545;
+    background-color: #000;
+    padding: 0;
+
+
+}
+
+#main-menu li:hover ul.sub-menu {
+    display: block;
+    margin-top: 30px;
+}
+
+
+#main-menu ul.sub-menu li {
+    padding: 10px 5px;
+    width: 100%;
+
+}
+
+#main-menu ul.sub-menu li:hover {
+    height: 50px;
+    background: #b32b2b;
+
+
+}
+
+#main-menu ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+
+
+}
+
+
+
+
+
+/* sidbar menu */
+#main-menu div.sidbar {
+    position: absolute;
+    display: none;
+    width: 100vw;
+    left: -1067px;
+    background-color: #000;
+    border-top: 4px solid #dc3545;
+
+}
+
+#main-menu div.sidbar a {
+    margin: 0 10px;
+}
+
+#main-menu div.sidbar a:hover {
+    color: #b32b2b;
+}
+
+
+#main-menu li:hover div.sidbar {
+    display: block;
+    display: flex;
+    margin-top: 30px;
+}
+
+.sidbar_sweter-center {
+    padding: 0;
+
+
+}
+
+
+/* biểu tượng */
+
+
+.icon_distance {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #999696;
+
+}
+
+.icon_distance span:hover {
+    color: #457da5;
+    transition: 0.5s;
+}
+
+.icon_distance b:hover {
+    color: chartreuse;
+    transition: 0.5s;
+}
+
+
+
+/* yame mời bạn */
+.product {
+    width: 250px;
+    height: 50px;
+    background: #343a40;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    float: right;
+
+}
+
+.product a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.product:hover {
+    background: #000;
+    transition: 1s;
+
+}
+
+.opensell {
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ảnh bìa */
+
+
+
+/*hình nhảy */
+.card {
+    width: 210px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 !important;
+    border: 0 solid !important;
+
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.card img {
+    width: 210px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.card-body {
+    width: 212px;
+    height: 320px;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    /* border-radius: 15px; */
+    transition: 0.5s;
+    padding: 0 !important;
+
+
+}
+
+/* hình tự động trượt sản phẩm */
+
+
+
+.carousel-cell {
+    width: 100%;
+
+}
+
+.main-carousell {
+    width: 100%;
+}
+
+.erol {
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.testarreay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.tainha.col-md-4 {
+    padding: 0 0 30px 0;
+}
+
+/* thông tin sự kiện event */
+.shoppingEvent {
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+.shoppingEvent_selective {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+
+}
+
+/* .shoppingEvent_selective a {
+    text-decoration: none;
+    color: #000;
+
+} */
+
+.shoppingEvent_selective:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 1s;
+}
+
+div .form-control {
+    position: fixed;
+    top: 0;
+}

@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaMe.VN</title>
+    <!-- resposive -->
+    <link rel="stylesheet" href="resposive.css">
+    <!-- shopping -->
+    <link rel="stylesheet" href="shopping.css">
+    <!-- user -->
+    <link rel="stylesheet" href="user.css">
+    <!-- footer -->
+    <link rel="stylesheet" href="footer.css">
+    <!-- ảnh sản phẩm -->
+    <link rel="stylesheet" href="listEvent.css">
+    <!-- resset.css -->
+    <link rel="stylesheet" href="resset.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- hình favicon  -->
+    <link rel="shortcut icon" type="image/png"
+        href="data:image/png;base64,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" />
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link bootrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- plikity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- aos js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- <p class="endow">Giảm giá lên đến 57%. Tạo thẻ VIP <a href="#">tại đây</a></p> -->
+        <div class=" clothes">
+            <div class="clothes_logo">
+                <h1 class="yamenone">YaME</h1>
+                <a href="#">
+                    <img class="img_size" src="https://res.yame.vn/Content/images/yame-f-logo-white.png" alt="#">
+                </a>
+            </div>
+            <div class="centerauto">
+                <nav>
+                    <ul id="main-menu">
+                        <li>
+                            <a href="#">BỘ SƯU TẬP <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">The Style Of No Style</a></li>
+                                <li><a href="#">The Day Eye</a></li>
+                                <li><a href="#">Y2010 Originals</a></li>
+                                <li><a href="#">Nghệ Thuật Tối Giản</a></li>
+                                <li><a href="#">Đơn giản mà sang</a></li>
+                                <li><a href="#">Space</a></li>
+                                <li><a href="#">Linh vật Bbuff</a></li>
+                                <li><a href="#">Thần Horus</a></li>
+                                <li><a href="#">Valknut Cổ Đại</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">SALE CẢM ƠN 13 NĂM</a>
+                        </li>
+                        <li>
+                            <a href="#">MỞ BÁN SẢN PHẨM MỚI</a>
+                        </li>
+                        <li>
+                            <a href="#">ÁO THUN <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Cổ tròn form tiêu chuẩn</a></li>
+                                <li><a href="#">Cổ tròn form rộng</a></li>
+                                <li><a href="#">áo thun 3 lỗ</a></li>
+                                <li><a href="#">áo thun Sweater</a></li>
+                                <li><a href="#">áo thun tối giản</a></li>
+                                <li><a href="#">áo thun cổ điển</a></li>
+                                <li><a href="#">áo thun mùa hè</a></li>
+                                <li><a href="#">áo thun mùa đông</a></li>
+                                <li><a href="#">áo thun đi biển</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- sidbar menu -->
+                        <li>
+                            <a href="#">
+                                <span> <i class="fa-solid fa-bars"></i><i class="fa-sharp fa-solid fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="sidbar">
+                                <div>
+                                    <a href="#">ÁO KHOÁc</a>
+                                    <ul class="sidbar_sweter-center">
+                                        <li><a href="#">áo khoác chống nắng</a></li>
+                                        <li><a href="#">áo khoác Varsity</a></li>
+                                        <li><a href="#">áo khoác Bomber</a></li>
+                                        <li><a href="#">áo khoác Cardigan</a></li>
+                                        <li><a href="#">áo khoác Hoodie</a></li>
+                                        <li><a href="#">áo khoác chống nắng cổ</a></li>
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#">ÁO SƠ MI</a>
+                                    <ul class="sidbar_sweter-center">
+                                        <li><a href="#">áo sơ mi tay dài</a></li>
+                                        <li><a href="#">áo sơ mi tay ngắn</a></li>
+                                        <li><a href="#">áo sơ mi Cuban/Danton</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#">QUẦN TÂY</a>
+                                    <ul class="sidbar_sweter-center">
+                                        <li><a href="#">quần JOGGER</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#">QUẦN JAEN</a>
+                                    <ul class="sidbar_sweter-center">
+                                        <li><a href="#">quần dài vải</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#">QUẦN SHORT</a>
+                                    <ul class="sidbar_sweter-center">
+                                        <li><a href="#">quần lót</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#">PHỤ KIỆN</a>
+                                    <ul class="sidbar_sweter-center">
+                                        <li><a href="#">dây nịt da</a></li>
+                                        <li><a href="#">ví da</a></li>
+                                        <li><a href="#">nón</a></li>
+                                        <li><a href="#">tất-vớ</a></li>
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#">BALO</a>
+                                    <ul class="sidbar_sweter-center">
+                                        <li><a href="#">túi</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#">GIÀY NAM</a>
+                                    <ul class="sidbar_sweter-center">
+                                        <li><a href="#">dép nam</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="icon">
+                <a class="icon_distance" href="#">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </a>
+                <a class="icon_distance" href="https://www.gamepikachu.vn/n/game-pikachu-co-dien">
+                    <b>GAME</b>
+                </a>
+                <b id="searchClothing" class="icon_distance" href="">
+                    <span><i class="fa-regular fa-user"></i></span>
+                </b>
+                <b id="trolley" class="icon_distance" href="">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                </b>
+            </div>
+        </div>
+        <!-- search sản phẩm  -->
+        <div class="formsearch ">
+            <div class="form-control">
+                <div>
+                    <form style="border: none;" action="/search" method="post">
+                        <input style="border: none; font-size: 50px; margin-top: 10px;" type="text" name="keyword"
+                            placeholder="Nhập sản phẩm cần tìm ..." />
+                    </form>
+                    <a href="#" class="clearSearch" style="float: right;text-decoration: none; color: black;">x</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- kéo dài theo màn hình -->
+    <div class="long_withpictures"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <!-- thông tin đăng nhập -->
+        <div id="forClothing" class="formSize ">
+            <div class="container " style="background:#e9ecef"><i class="fa-solid fa-house"></i> / Đăng
+                nhập-Nhận OTP bởi Zalo</div>
+            <h1 class="from-text">
+                Đăng
+                ký/Đăng nhập
+                VIP
+                bằng số điện thoại</h1>
+            <form class="from_item">
+                <div class="from_item-phone">
+                    <div class="form-field">
+                        <div class="from_item-phone1">+84</div>
+                    </div>
+                    <div>
+                        <input class="form-field2" type="password" placeholder="Nhập số điện thoại">
+                    </div>
+                </div>
+                <button class="from_item-phone2">Đăng nhập</button>
+            </form>
+            <p class="from-text2">* Nếu Số điện thoại của bạn không sử dụng Zalo, Vui lòng
+                <a href="#">Đăng nhập tại đây.</a>
+            </p>
+            <p class="from-text3">
+                Theo dõi đơn hàng Giảm giá lên đến <b style="color: red;">57%</b>
+            </p>
+        </div>
+        <!-- giỏ hàng kiểm tra mấy bao nhiêu tiền -->
+
+        <div class="carts">
+            <div class="carst_information">
+                <i class="fa-solid fa-house"></i> / Thông tin giỏ hàng của bạn
+            </div>
+            <div class="carst_select">
+                Bạn chưa chọn sản phẩm<main></main>
+            </div>
+            <div class="carst_avatar">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUSFRgSFRUYGRgSGBoZGhkYHBUYGhgdHBoaGhgcFhgfIS4lHB4rIxwZJjgmLC8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHxISHzErJSsxNDU0NTY6ND0xNDU0PTQxNDE1NDQ2NDE4NDQxNDU0NDQ0NDQ0NDQ0NDQ0MTQ0MUA0QP/AABEIAM4A9QMBIgACEQEDEQH/xAAbAAEAAQUBAAAAAAAAAAAAAAAAAQIDBAUGB//EAE8QAAIBAwICBQgFCAUICwAAAAECAAMEERIhBTEGIkFRcRMyUmGBkaGxBxRCYpIjU3KCssHC0UNEg5OiFSQzY8PS4fAWNFRkc6Oks9Pi8f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAIhEBAQACAQQCAwEAAAAAAAAAAAECERIDITFRE0EiMnFh/9oADAMBAAIRAxEAPwD2aIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiRECYkRAmJEiBVIkRAmJEQJiRECYkRAqkSIgTmMyIgTmMyIgTmMyIgTmMyIgTmMyIgTmMyMRiBVEpEqgIiIESMwZECcxNVx/iy2lI1MFnZglOmCA1Wo3mIpPLOCSewAnsnH3iI+luIVWqvUzpoIavkR3rSt061UDUAWcNzBOkbTOWcjWOFveO8rX1JDh6iKe5mUH3Ey7Sqq41KwYHtUgj3ieZV+A8LuCtJrcUXbOgim9Ek9ysR5N22zpOo4BOMZmpbhdGyrCjVPkWfejXoM9v5QDbcIwGtc4KnPMEbNJM5brxS42Tb2eJ5/Y8dvLYZY/XKPeNC3KD1EYSr4HSfWZ2HCOK0btPK0XDLnSeYZGHNXU7qwyMg77zbLYREQEREBERAREQEREBERAREQERLVWuiec6rn0iF+cC7E1FXpNYqdLXtspHY1aiD7i0xG6b8NH9doexwfdjnA6KJzKdO+HkkfWNOO10rom3c7IFI9eZvLK+pV0FSjUSoh5MjKynHMZB5jugZcmQJMBERApMiVGRA47pQdV5aqeSUbmovcWzRpg+IV3/EZrOFYe5uXbd0ZEX7qBEYAeol2b9ab/phYVGWndUUL1LRmYou7VKTrisiff2VgO0oB2zmWoC4K3drWCs6hScEo4Xkrrsyuu4zzHIg4GOGV49TlfGtPRjOfT4zzLv+tzxSglSk6vspXnyKkbqyn7LKQCCNwQD2TVXRFzS4e9ZFZnq2+tHVSD5ei61lKsOWGJx9z1SGsLiv1Lh08n9qnTDHWPRZ2Awp3BAGSO0TO4LT+u3KVV3t7JmYP9mrXIamAnYVRWfLDbUwAzpMXKZ5Tj9HC4YW5dt+IxuK9FKtlmtZF6lMbtasdTKO027HdsegxPqPIHAsrnWRe2bBKw2dWyEqhedOuvPI3AbGpT7QfUpw3TDgbUnPEbVcsN7ikv8ASKB/pEHbUUDcfaUd4Ge7zsuh0/tCAGFdag2ekKNeo1Nu1SyIVPYQQdwQe2VN03Q50Wt0/d1KdMH8dRT8JzbVBUVbuj1uqNSrvrTnt98cx37jtBAdJbXb8smT3Mvw3gdAemVQ+bYVs/fqW6j/AAu3ylA6W3R/qCjxuB+6mZpf8v0Tuuth3qjsN+W4Bg8ZHZQuD4Uax/gl1Rt26U3x5WVAD71w5+VGSOkl+f6tbL/a1W/2YmoXijtsttW270Kc848/HcZP16ueVs/tegPnUl45ek3GxPHeJHstB+pXb46xJ/y3xLvtP7uv/wDLNYt1ctyt8bkdZ6XYcdjmSXu/QpDxd/3IZeGXo5RnvxfiZ5VLQf2FY/OtKf8AKXEzzuLYeFu3wzWmAouySPyIwfSqHsB2Ggd/wlRtro/01MeCO38Yj4svScoynuOIN/X9P6FCh/ErSk/Xjz4hW/VS0X/ZTGNlck73KjY8qXh/rJUeG1TzuX/VRF+eqa+HL0cou+Suu3iF1/6Yf7KW34fUY5a9vD4XFRPghUS2nCHOrNxWODgb0h9lT2U+8mSOCjtqVm8XA/ZUS/DkcoHg9M7vVuG79VxctnxBfeWqfALFf6CiTzyyox8ckEyteBU9Rz5Q4A51a/bnsDjul0cBo+gT4vWP8cvw5f4couJQt081KY8Ao+UqN1SX7aj2y0nAbds5oU26xHWRW5HH2s9xl9OC0V5UKQ8KdP8A3Y+C+05xhXPSC1p+dVTPdlcn1Ac5tugNo5qXF15NqVGuKaojKyM7Jr11ShAKghlUE7nT3YzX0WskN5XYKuLelRpLgKNLNrq1MADAJVqXunazllNXTUu0iTIEmZUiIgUxEQE0HEeilvWdqy66NV/OqUGNNm9brujn1spm/iLNkunLL0Kosfy9e5uF9CrUAQ/pJSVAw5bNkbes56OhRWmqoiqqoAFVQFUAbAKBsAO6XsxJJJ4W23yRESo8243ZDh10GUYtr1jgfZp1t2dR3Kwyw9YYdwmG6GjUKAkJUy9PBOAc5dPedY8X7FnofH+FLeUHt221jqsOaMpyjD1hgDPOLR3r0WpuAtxauVIPJaiHGO/Q3xV/XN4ZcctplNxtrYahg5IO3PvmxtqWpRnmMg+IOCfbz9s0nD7pWCuNWGAIBDZGexhjYjkR3gzdW1bDHqsdYB80jcdVueOzRPa4q3oAMrdhOk/reafxAD9cy+KAh2LAjQwyOZ0bdx87sO/slaOSM6efef8AhJsW0oAMR34YfI/JffIdVEqqMRg7fE8//wAExK9UKCzHZdzgE+4dp7AO0kCBbr1gn2WZm81F06mK7nGohRzGSxAGRk7iWXuKiZZ6ShBzZHao6j0mpmmuw7dDOfUZdp9Qa6gJeoQoRRqbvWnTA87G5J5E6mOByyrd26vlaNSg7sQofQwJzhQHRmUMRjCkg5OBnExc5vVulkYbVmY6aYQ6canZuquVDKFC7u2CjYyo0uDq7JQr103YJUGd/Jq1N1H3abO/lD3jWpxyDHAOX9VWkBTpKAzazTRF1b5LM2nUoCgsCcso3AyMgSnFamubml5MZ89GD0/UXxvS9upR6cXOS6t7rqq7Z1YalIZXwwYbggqMEH2TLKL2kDxmraiabnCkpUYlgPsPuS+PQf7WOT9bB1uRsKDDuE3KyhCmpusDyG2/Idw8ZOtexX/A4+agS8p3Pj+4S4sbGDbscbU3OWc5zTA3dj2vn4S6dfYie12HyQyu18xT3qD79z85eDgbnkNz4Dcx9CjoYpKXFUgA1rqtyJYYpEW4wSB2Uu4TpJoehCEWFsxxqq0lqsQMZar+UY48XM308N7u6RJkCTIERECmIiAkSZECJIkSRAmIiAnnvSm3+rX6VwMJfIUfu8rTGxPrZD/5U9CnNdPbA1bN2UZe2IrpgZOafWYAd7JrX9aBySJ5Oq9PkrHyicvtk6wPB+sT/rRN3SfYN6Bz7Ds3wJPsmju6gdKNypzpIBI7UfCHfsAJRz/4c2dpUYjGF325k/DA+c9nRy3jr05ZTVbsSF7R68+//jmY9szkDLLtseq3MEg76+8d0vMD389uzx/nN1Fmu0xXVch2bC08tvjSMDz22ydIzjfA54zgjKdMy21PvGfUdwe8Edol+kbToxRDU1umUhq65UNzSmd0XHYSMM3rOOSjGp4z094YtR7KtXJO6OVWoVVuRGtRswPavIjmCNtpZ3RSyfScNbU6iDHMGmraCfWV0N+sO+eKdA+FcOube5N2zPcnIoorFah6hINJcgOxbOdWQNIJwMk+C7tdp4ej0unNpZZa6djWdihCLqIWizUmYgHCq1Razgc8OO4TteE8To3lJa9Fg9OoNiPcQwO4I5EGeL9G+h9hSetT4lUUE0kakzVDTTOkisUbIDMrYwp+yVON9tv9A9y2byiGLU1amy7Y3bWpYDsyFX3CMpZe6x06UHoValtjNOm2qi23URgjBDvnALMqHupsDjSuq8hl6/UNdVXGdlpUj3ZTylTI9lcD2Y7DIFKevp38Ztyy8rtNpWWYbgDbvJ/cplFKXTyPgflNItUg4VR1BhV9I9g8Ji8YrVKdvXqAp+ToVX81t9NN2xnVtymwTzR4D5TVdK2xY3R/7tVHvRh++TL9aTy6vg1MJb0UAwFpIMd2FUTNlKKAAByAAlU8TskSZAkwERECmIiAkYkxAjEmIgIiICUsoIwRkHYg9vjKogeT8ItNKXFg2f8AN3qUdzvoyfJnPrRlPtmVwquWVWbziBqHc3Jx7GBHsmVxyl5HijH7N3QR/F6ZNN/8Pkf+czX0VNN6lPlpcsPB+vnn6Zf3Tv0L+WmM52dFbPuR4N7xj5qT7Zlk7eE1VuTlTqO4I+z6j3dwM2CDbmfeZ6a5ric5damJj6sbyo15NKwvI1VbWtd0YrpZaS01R+7UtRXyRyByNjNXweyo0aStSRFNVVZ2VVQuSMtnAGACSNGwXlgTcu2Zqr0U0fArpSdyeoxRg7cyfJEhi3foK5zk5meMxuzdvZhcZsaddTTqKGVuw8wewqew+uU9DOFC0pOtGrVUs/XI8j1iqqVIOjVjS46ueeqX2plvOqNjtKW1yT7GJdV9oMy0u6FJAC6oozvUJTcnJLM+NySTFmOV3SbjaWFsE1dd31Et1yhwWZnYghQdyx5k4wMYmbUUATAtawcakIcd6EMPVuMiXBchwCpBB5EEEHwI5y69G1ac5W+dJ3HI9nq8ZTSXtldY4Rz3I37JigtNsDr9g+ys1PSmgxs7gF3INNlximAdWF9DPb3zdiajpQwFrUHpmkn469NP4pM/1pPLuIgxPE7JEmQJMBERApiTIgIiICIiAiIgIiIHC/SBT03FjWz9urSPrDoKg9xpf4pqL8aa4P5yn+wwx/7h903/ANJSfkbapj/R3dMk9wZKib+JZR7RNDxfz6LelrX3oX/gE30rrKM5eGXRfAB7iP5H4EzYUrlfSHvE0lLGMYG47hM1Lie6xybJKgI7fcez2TGvPKac0sF130NhVfbzS+CUPc3LI3BHK1Tuefj89/3yv6yNvH9xksFq3piqi1HdnDgHSA1OmNsFWpg6m7QVdn3HIYmXRRaSEIuhEUnRTTsUZwqINz3KBkyjyw75dp1xJMdCgrX5iinPzTWIfHsplNf3den7/bLqMcBsMmQDpOAy5GcNpJGR6iR65fFyJYq1xElGBfcMp1gdSJqKlQ5VS66hg6X85TgnkRNnSp+wdgGMAdgAmKLgZO3YP3/8JWLr1H4yjMXkOsR4aP3iWrsdR+ux6rbdUcwR2KJgrd4UZ7hMe44kgBBdRnvZR8zIN0yD03/EZqOktJRbkguT5W25vVYf9aofZLEfCW241T/O0/xp/OYPFOLUXVFNWnhri2ydaEAC5pMxO/IAEnwmc9cas8vU4li2u6dVdVN1dfSRlYe8GX54nZIkyBJgIiIESJMQIiIgIiICIiAiIgcv9IyZsKhx5j0HHq016ZJ92ZxXE+I038mqMXam3XVFaoy5puOsqAsOY5jtmw41etxS4emHYWVsxQqpKi4qKcOWIPWpqRgDkSCd9pZuuKU7dltaFJqlQjqUaK5IGwzpGyqO84EsursrFSs/2aFZs9wpp79bqZf8ncbYooP06pX9lGmbT4XxerypW9AH87ULsN/RpqRntxq9sy06C3L71uIsM/Zo0lQD9ZixPuE63rZVnjGpNtcY3eih9YdwP8SZ+Ek0G+1cqP0EQD2BtRHvm+pfRxb5zUuLupkcmqhV9gpqvxzMun9HvDFOr6qrH771qnwdzMXqZX7OMclpRfPvXPq/IKPeqA/GUmta9ty5/tqg+TidynQvhy7iyt/bTVvgRL3/AEUsP+w2v9xQ/wB2Tnl7XUef/WbJeddvbcVT83lpuJ8O7bhf75viNe89HTotYg5FlagjtFCiD+zMylwuggwtCko7lRB8hJyq6eUHifDPzqf3n/2lP+UuF+nS/Ep/fPXfqNL82n4V/lH1Gl+bT8K/yjdHka8Q4Vz/AM29opH5zITjXDV817ceBpj5T1T6jS/Np+Ff5R9Rpfm0/Cv8pB5iOkNieVWj+JP5y8eKWbDz6RH6hE76/tbRELV0oKg5motMKM95YYnO0qnAajaQOGlifRtck+JG5gaHolcUqnE1NmBoFKoLk0wBTI28lrI6pfUDjtxq7J6lMe0t0poEpKqIB1VRVVQPugbTIgSJMgSYCIiBESmTARGYgIiICIkQJmi6a3z29jc1qZw6Um0kc1J6oYesZz7JvAZj39mlem9GoMpVUow7wwwfA+uBwHBbRaNulNeSoAP5n19vtm1+jShSFu1QYNw9R/rJONYdWICN2hVXTpHLBz2zmy9Thbi2usmmTpo3H2HG+lWPJamBup54yMzXcdp0q9ZQmx05qujMjOhyq03Kkag3WznOykbZBgd9fdObZGKUlqXDIcN5EKUUjmDVdlQn1AmY9Lp/S/pbe5pr2vpSqo8RSdmA9k5Lh9o9YlKAREpdQuykopHNKdNSurHInIAO25Bxm3PBrimC6slULuVVSj+vQS5Vj3KdP6UD0qyvaddBVpOro26sp1A+0fKZE8Sq13pYrW9epSSqymr5IhdYbqq5VlIDAkBjgHGc+bN+abMOtf3RB/12n4oAYHp0s1rpEGXdFHezKo+Jnl72FsT+Ur1nx6dxcP8AAviWRZ8MQ58nb555ZUJ95gejV+kllT8+7t1z6VWmP4phnpvw7OBd02P3NT+4qDmcSvFuH09g9BPUPJr8JLdLLFf6ZPYyn5QOwPTuy7Grt+jb3Rz4HycoHTmgfNoXbf2LJ+2VnHJ0wtnOE1ufuJUf9lTvLw6QM3mWd236NvcH+CB0zdNmOdFhdE9mo26D2nyhI90weI9Orikmv6kASQqhq67sxwBhUP8AyD4zWU+IXj+Zw65/XVE+DuD8Jo+N3Nwa9JLi3ajhHqKHKEscqmRoY4wHcb+lAu3LmtUWrcE3Fd86FxqC9pWhTPVRRkdY78tTZMza1jX0de2LJ2qGpucetDgHwBPtmT0RRWetUO7KyoPUoRWwPEsx9s6mBxPB+LtY4q0GLW2fylvuVC5w7UAd6bruSnI6SMBp6zRrLURXVgyuoZWG4YEZBHqInlXGVFO5qBcYdKbkffJdGPtCL+E987H6OKpaxRTypPWpr+ilV1QewAD2QOqEmQJMBERApkSYgRERAmJEQEREBJEiMwLVxQWqrI6qyuMMrAMpHaCp2Inj9zZ07a9uaNNAiLVTSg2AU0qbDSPR1Fz7TPZczzf6SuDvTccRpqSmgJcBRkqq5KVccyBkq3cMHkDAudC3BtKXpBRr79eOvn16tXxm9M8y4dxR6DF6LKVfrMjE6GJ3LqwzpzzOxBO+xJznXnSS4qro6lMHmUJdz6lyoCn17+EDC41UXyV1jzSbjTj9bV/j1z0Cx+jzh7U6bPbkuUUtmtckaio1dU1MYzmcRwDg54hWWgq/5vRZTXbfSFXBFIHtZiACOxdRPMZ9qzA55eg3DR/UqHtUH5y8nRDh42Fjbe2jSb4lTN3mMwNdb8BtKf8Ao7agmfQpU1+SzMp2qKcqiqe8KAfeBLuYzAmJEiBVmef/AEqcNYpSvEBP1UstQDJxTqactjuVlQn1Fj2TvpS6BgQQCCMEHcEHmCO0QPEuF8Seg/lUGsOAHp5ALYGFZSdicYBBO4AwdsHon6YJg6KNUuOwo6D8bgL8ZkcZ+jlgxeyqKinJ8hV1aFPdSdcsq/dIYDO2BtNPT6EcSY6Stuo9I1nYeIUJk/CBqLy+YlqjdepVZQETJyfNp0k7W3PPG5ZjgDYeu9E+FG0tKVBsF1Us5HIu5LvjvGpj7pqOjHQmnauLiq/lq6g6WxpSnnY+STJwxGxYknuwDidhAkSZAkwERECIxJiBTiRK4gURK4gURK4gURK4gUYkES5EDi+J/R1aVWL0zUt2YkkUSugk8z5N1ZV/VC85iW/0Y24bNS4uKi+hmnTB/SKIGx4ETv4gYPD+H07dFpUaa00XkqDAHefWT2nmZl4lcQKMRiVxAoxGJXECjEYlcQKMRiVxAoxGJXECjEmVRAgSYiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIH/9k="
+                    height="300px" alt="">
+            </div>
+            <div class="carst_favourite">
+                Hãy nhanh tay chọn sản phẩm yêu thích
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- sản phẩm 1 -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6" data-aos="fade-right">
+                    <div class="main-carousel batmen">
+                        <div class="carousel-cell">
+                            <a href="">
+                                <img src="https://cmsv2.yame.vn/uploads/f6bb1683-d35d-4464-830f-438044760822/Banner_SNYM_(1053%e2%80%86%c3%97%e2%80%861260).jpg?quality=80&w=700&h=0"
+                                    height="100%" alt="">
+                            </a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="">
+                                <img src="https://cmsv2.yame.vn/uploads/5a40044b-17e9-49b1-9b1e-e1b2407f16e7/Banner_sale_7_day_(1053x1260)_01.jpg?quality=80&w=700&h=0"
+                                    height="100%" alt="">
+                            </a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="">
+                                <img src="https://cmsv2.yame.vn/uploads/79ae3a5f-8323-4baf-99ee-27e65b8b793c/Banner_sale_7_day_(1053x1260)_02.jpg?quality=80&w=700&h=0"
+                                    height="100%" alt="">
+                            </a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="">
+                                <img src="https://cmsv2.yame.vn/uploads/c69f9728-83df-48bf-91fb-d5e0c150a7fa/Banner_sale_7_day_(1053x1260)_03.jpg?quality=80&w=700&h=0"
+                                    height="100%" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- danh sách sản phẩm -->
+                <div class="col-6">
+                    <h2 class="opensell">CẢM ƠN 13 NĂM</h2>
+                    <p>Rất Nhiều và Rẻ, mua KHÔNG GIỚI HẠN. Giá chỉ từ 77.000đ</p>
+                    <div class="row">
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+                            <div class="card">
+                                <a href="">
+                                    <img src='https://cdn2.yame.vn/pimg/ao-khoac-cardigan-j-p-s-24-0022149/b32b6d51-23ab-4001-eca2-001a5a4725dc.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-khoac-cardigan-j-p-s-24-0022149/cc2292cc-c37b-be00-f894-001a5a3d6899.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            <div class="watchclock">
+                                TG<div class="item">
+                                    <span id="days">Days</span>
+                                </div>
+                                <div class="item">
+                                    <span id="hours">Hours</span>
+                                </div>
+                                <div class="item">
+                                    <span id="minutes">Minutes</span>
+                                </div>
+                                <div class="item">
+                                    <span id="seconds">Seconds</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 15px;">
+                                VIP <del>167</del> <i style="color: brown;">77</i> <img style="margin-bottom: 10px;"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA8xJREFUWIXFl11oHGUUhp8zM7sbo2kTijbBakqMRYlooYYEBUWKZhPTdLO4UEVbEBWpBQsFIVrtNjZgrJbSitSfChWpaKm5iEEbL2wF0SsllILoTSuktqakTUzs7szsHC82aSbZnexuUuK5+n7O977PzJxvvhlYZDht8Ycm2hLVC11vLMbcjsYbPU8HI55b/78AINoDRByRs0sOoImEqcojAOJx55IDMDZWBlgAIrpLk8kFaS0YQAYHJ4FzAAIPp38e+kBBlgwAQISea214zmmNHygVYlEAoab7DgucnO6r6jY7Gu+ZZ8niAOzHYuvS0c5vpvuSTHoZdM/sLO2yW+LPXHcATSRuUEO+QFjlHy9LXTmVkyv6nrYmbr6uAM545gngDpQ6v7hTvnxdnvRlNu4LxehaxQKoaPtUs9z23MF0NPa2CJXqyet585VHgYL1UDQAKrWIZtvCWpCjqsHpAnXFyJZQhLqs+FwAMtONVGusNdXWuaYkAE0kTH9fhIslAozMiMlrkpHeogHS0fib6fHMwVlAMFySvRJSkIn1HSsFmhBtn2yJ1xQEyJ7t+oqgT+r6zhUzF8E/JQEIa+2Wzl9CIesnsrVmWWQPL3/kFKGlmU1AGCFsW/KxdnRstlNmLUqsJIApCJipVBG9HzjqT8m5A6La5OvEbNscx+A0UA0gt9ZgNDdCeXmuYTiMrK4N5FHRlXPH8tSAVgUJGA80ETr4DubTmwgd2o9ULp+ZjESwundibnw8EABPcrTzAMhk0Hoz1o576BOcbTvQs38iDzbPmO9+FRwb9/2PggGEscIAyh9B6/XSKMa99yB3rUFuXwUXR3zmDm53LzhOsL9ozk7KBTDk1yCBzOEjUFWJ1bUD7/sf8E6fKdocAM8YyoGaO6AbNpTbjnUBqJhXrIQrnwo3bNq3yMDAZf9g7i7o7/9XVT4r2nzPXqytzxPu/5LQ/l6kOqfQs6Hy9VzzvAAAjmoS5UpB8+5ejOZGpOFunBdfxvvtd8xn836LZEB25pvIC1Ax2Pe3CNsLmeM4cNON6Ohl9PwFGD6f//0A+yInjp8pGgAg/G3fEWCvf8zavhWupnB3v3XtmXunfkRWVBH69EPMLU/hHeubKzUQrrC6gnzm/YJVEDsa3wX6BiBSU42OjICbmZ0YCiH1dejwXzA+7p/pC6eszXLy2MSCAKYj3RqLoXIAuK2YfGBCVZKRE1/tE/9hsFAAyG7PtGO9JLAFaAhIOwd8Hg6570p//6VidEv+kwFItXTUC2aDoqsNg6uKMaquDJV9dzzwLRoU/wGxqGF2wiMubwAAAABJRU5ErkJggg== "
+                                    width="20px" height="20px" alt="">đang sale
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+                            <div class="card">
+                                <a href="">
+                                    <img src='https://cdn2.yame.vn/pimg/ao-khoac-hoodie-j-p-s-12-0022121/8ff181bb-3d38-3c01-b881-001a5a46b5fb.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-khoac-hoodie-j-p-s-12-0022121/0f3d4124-d771-8000-2f20-001a5a395c63.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            <div class="watchclock">
+                                TG<div class="item">
+                                    <span id="days2">Days</span>
+                                </div>
+                                <div class="item">
+                                    <span id="hours2">Hours</span>
+                                </div>
+                                <div class="item">
+                                    <span id="minutes2">Minutes</span>
+                                </div>
+                                <div class="item">
+                                    <span id="seconds2">Seconds</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 15px;">
+                                VIP <del>257</del> <i style="color: brown;">127</i> <img style="margin-bottom: 10px;"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA8xJREFUWIXFl11oHGUUhp8zM7sbo2kTijbBakqMRYlooYYEBUWKZhPTdLO4UEVbEBWpBQsFIVrtNjZgrJbSitSfChWpaKm5iEEbL2wF0SsllILoTSuktqakTUzs7szsHC82aSbZnexuUuK5+n7O977PzJxvvhlYZDht8Ycm2hLVC11vLMbcjsYbPU8HI55b/78AINoDRByRs0sOoImEqcojAOJx55IDMDZWBlgAIrpLk8kFaS0YQAYHJ4FzAAIPp38e+kBBlgwAQISea214zmmNHygVYlEAoab7DgucnO6r6jY7Gu+ZZ8niAOzHYuvS0c5vpvuSTHoZdM/sLO2yW+LPXHcATSRuUEO+QFjlHy9LXTmVkyv6nrYmbr6uAM545gngDpQ6v7hTvnxdnvRlNu4LxehaxQKoaPtUs9z23MF0NPa2CJXqyet585VHgYL1UDQAKrWIZtvCWpCjqsHpAnXFyJZQhLqs+FwAMtONVGusNdXWuaYkAE0kTH9fhIslAozMiMlrkpHeogHS0fib6fHMwVlAMFySvRJSkIn1HSsFmhBtn2yJ1xQEyJ7t+oqgT+r6zhUzF8E/JQEIa+2Wzl9CIesnsrVmWWQPL3/kFKGlmU1AGCFsW/KxdnRstlNmLUqsJIApCJipVBG9HzjqT8m5A6La5OvEbNscx+A0UA0gt9ZgNDdCeXmuYTiMrK4N5FHRlXPH8tSAVgUJGA80ETr4DubTmwgd2o9ULp+ZjESwundibnw8EABPcrTzAMhk0Hoz1o576BOcbTvQs38iDzbPmO9+FRwb9/2PggGEscIAyh9B6/XSKMa99yB3rUFuXwUXR3zmDm53LzhOsL9ozk7KBTDk1yCBzOEjUFWJ1bUD7/sf8E6fKdocAM8YyoGaO6AbNpTbjnUBqJhXrIQrnwo3bNq3yMDAZf9g7i7o7/9XVT4r2nzPXqytzxPu/5LQ/l6kOqfQs6Hy9VzzvAAAjmoS5UpB8+5ejOZGpOFunBdfxvvtd8xn836LZEB25pvIC1Ax2Pe3CNsLmeM4cNON6Ohl9PwFGD6f//0A+yInjp8pGgAg/G3fEWCvf8zavhWupnB3v3XtmXunfkRWVBH69EPMLU/hHeubKzUQrrC6gnzm/YJVEDsa3wX6BiBSU42OjICbmZ0YCiH1dejwXzA+7p/pC6eszXLy2MSCAKYj3RqLoXIAuK2YfGBCVZKRE1/tE/9hsFAAyG7PtGO9JLAFaAhIOwd8Hg6570p//6VidEv+kwFItXTUC2aDoqsNg6uKMaquDJV9dzzwLRoU/wGxqGF2wiMubwAAAABJRU5ErkJggg== "
+                                    width="20px" height="20px" alt="">đang sale
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+
+                            <div class="card">
+                                <a href="#"> <img
+                                        src='https://cdn2.yame.vn/pimg/ao-thun-sweater-j-p-s-35-0022158/9c37507b-8454-3b01-2a62-001a5a469d92.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-thun-sweater-j-p-s-35-0022158/6c2701b4-8e6d-7000-44e3-001a5a38e43f.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            <div class="watchclock">
+                                TG<div class="item">
+                                    <span id="days3">Days</span>
+                                </div>
+                                <div class="item">
+                                    <span id="hours3">Hours</span>
+                                </div>
+                                <div class="item">
+                                    <span id="minutes3">Minutes</span>
+                                </div>
+                                <div class="item">
+                                    <span id="seconds3">Seconds</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 15px;">
+                                VIP <del>299</del> <i style="color: brown;">177</i> <img style="margin-bottom: 10px;"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA8xJREFUWIXFl11oHGUUhp8zM7sbo2kTijbBakqMRYlooYYEBUWKZhPTdLO4UEVbEBWpBQsFIVrtNjZgrJbSitSfChWpaKm5iEEbL2wF0SsllILoTSuktqakTUzs7szsHC82aSbZnexuUuK5+n7O977PzJxvvhlYZDht8Ycm2hLVC11vLMbcjsYbPU8HI55b/78AINoDRByRs0sOoImEqcojAOJx55IDMDZWBlgAIrpLk8kFaS0YQAYHJ4FzAAIPp38e+kBBlgwAQISea214zmmNHygVYlEAoab7DgucnO6r6jY7Gu+ZZ8niAOzHYuvS0c5vpvuSTHoZdM/sLO2yW+LPXHcATSRuUEO+QFjlHy9LXTmVkyv6nrYmbr6uAM545gngDpQ6v7hTvnxdnvRlNu4LxehaxQKoaPtUs9z23MF0NPa2CJXqyet585VHgYL1UDQAKrWIZtvCWpCjqsHpAnXFyJZQhLqs+FwAMtONVGusNdXWuaYkAE0kTH9fhIslAozMiMlrkpHeogHS0fib6fHMwVlAMFySvRJSkIn1HSsFmhBtn2yJ1xQEyJ7t+oqgT+r6zhUzF8E/JQEIa+2Wzl9CIesnsrVmWWQPL3/kFKGlmU1AGCFsW/KxdnRstlNmLUqsJIApCJipVBG9HzjqT8m5A6La5OvEbNscx+A0UA0gt9ZgNDdCeXmuYTiMrK4N5FHRlXPH8tSAVgUJGA80ETr4DubTmwgd2o9ULp+ZjESwundibnw8EABPcrTzAMhk0Hoz1o576BOcbTvQs38iDzbPmO9+FRwb9/2PggGEscIAyh9B6/XSKMa99yB3rUFuXwUXR3zmDm53LzhOsL9ozk7KBTDk1yCBzOEjUFWJ1bUD7/sf8E6fKdocAM8YyoGaO6AbNpTbjnUBqJhXrIQrnwo3bNq3yMDAZf9g7i7o7/9XVT4r2nzPXqytzxPu/5LQ/l6kOqfQs6Hy9VzzvAAAjmoS5UpB8+5ejOZGpOFunBdfxvvtd8xn836LZEB25pvIC1Ax2Pe3CNsLmeM4cNON6Ohl9PwFGD6f//0A+yInjp8pGgAg/G3fEWCvf8zavhWupnB3v3XtmXunfkRWVBH69EPMLU/hHeubKzUQrrC6gnzm/YJVEDsa3wX6BiBSU42OjICbmZ0YCiH1dejwXzA+7p/pC6eszXLy2MSCAKYj3RqLoXIAuK2YfGBCVZKRE1/tE/9hsFAAyG7PtGO9JLAFaAhIOwd8Hg6570p//6VidEv+kwFItXTUC2aDoqsNg6uKMaquDJV9dzzwLRoU/wGxqGF2wiMubwAAAABJRU5ErkJggg== "
+                                    width="20px" height="20px" alt="">đang sale
+                            </p>
+
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+
+                            <div class="card">
+                                <a href=""> <img
+                                        src='https://cdn2.yame.vn/pimg/ao-thun-co-tron-j-p-s-38-0022162/1024d84c-eb50-3501-5d63-001a5a46197d.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-j-p-s-38-0022162/0f5f3fb8-e36c-2200-1e24-001a5a344e61.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            <div class="watchclock">
+                                TG<div class="item">
+                                    <span id="days4">Days</span>
+                                </div>
+                                <div class="item">
+                                    <span id="hours4">Hours</span>
+                                </div>
+                                <div class="item">
+                                    <span id="minutes4">Minutes</span>
+                                </div>
+                                <div class="item">
+                                    <span id="seconds4">Seconds</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 15px;">
+                                VIP <del>325</del> <i style="color: brown;">197</i> <img style="margin-bottom: 10px;"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA8xJREFUWIXFl11oHGUUhp8zM7sbo2kTijbBakqMRYlooYYEBUWKZhPTdLO4UEVbEBWpBQsFIVrtNjZgrJbSitSfChWpaKm5iEEbL2wF0SsllILoTSuktqakTUzs7szsHC82aSbZnexuUuK5+n7O977PzJxvvhlYZDht8Ycm2hLVC11vLMbcjsYbPU8HI55b/78AINoDRByRs0sOoImEqcojAOJx55IDMDZWBlgAIrpLk8kFaS0YQAYHJ4FzAAIPp38e+kBBlgwAQISea214zmmNHygVYlEAoab7DgucnO6r6jY7Gu+ZZ8niAOzHYuvS0c5vpvuSTHoZdM/sLO2yW+LPXHcATSRuUEO+QFjlHy9LXTmVkyv6nrYmbr6uAM545gngDpQ6v7hTvnxdnvRlNu4LxehaxQKoaPtUs9z23MF0NPa2CJXqyet585VHgYL1UDQAKrWIZtvCWpCjqsHpAnXFyJZQhLqs+FwAMtONVGusNdXWuaYkAE0kTH9fhIslAozMiMlrkpHeogHS0fib6fHMwVlAMFySvRJSkIn1HSsFmhBtn2yJ1xQEyJ7t+oqgT+r6zhUzF8E/JQEIa+2Wzl9CIesnsrVmWWQPL3/kFKGlmU1AGCFsW/KxdnRstlNmLUqsJIApCJipVBG9HzjqT8m5A6La5OvEbNscx+A0UA0gt9ZgNDdCeXmuYTiMrK4N5FHRlXPH8tSAVgUJGA80ETr4DubTmwgd2o9ULp+ZjESwundibnw8EABPcrTzAMhk0Hoz1o576BOcbTvQs38iDzbPmO9+FRwb9/2PggGEscIAyh9B6/XSKMa99yB3rUFuXwUXR3zmDm53LzhOsL9ozk7KBTDk1yCBzOEjUFWJ1bUD7/sf8E6fKdocAM8YyoGaO6AbNpTbjnUBqJhXrIQrnwo3bNq3yMDAZf9g7i7o7/9XVT4r2nzPXqytzxPu/5LQ/l6kOqfQs6Hy9VzzvAAAjmoS5UpB8+5ejOZGpOFunBdfxvvtd8xn836LZEB25pvIC1Ax2Pe3CNsLmeM4cNON6Ohl9PwFGD6f//0A+yInjp8pGgAg/G3fEWCvf8zavhWupnB3v3XtmXunfkRWVBH69EPMLU/hHeubKzUQrrC6gnzm/YJVEDsa3wX6BiBSU42OjICbmZ0YCiH1dejwXzA+7p/pC6eszXLy2MSCAKYj3RqLoXIAuK2YfGBCVZKRE1/tE/9hsFAAyG7PtGO9JLAFaAhIOwd8Hg6570p//6VidEv+kwFItXTUC2aDoqsNg6uKMaquDJV9dzzwLRoU/wGxqGF2wiMubwAAAABJRU5ErkJggg== "
+                                    width="20px" height="20px" alt="">đang sale
+                            </p>
+
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+                            <div class="card">
+                                <a href="">
+                                    <img src='https://cdn2.yame.vn/pimg/ao-thun-co-tru-j-p-s-33-0022155/3afb7fd6-06f1-3f01-2b2c-001a5a470ee1.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tru-j-p-s-33-0022155/1aa1b4f6-e27d-af00-3820-001a5a3c381d.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            <div class="watchclock">
+                                TG<div class="item">
+                                    <span id="days5">Days</span>
+                                </div>
+                                <div class="item">
+                                    <span id="hours5">Hours</span>
+                                </div>
+                                <div class="item">
+                                    <span id="minutes5">Minutes</span>
+                                </div>
+                                <div class="item">
+                                    <span id="seconds5">Seconds</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 15px;">
+                                VIP <del>425</del> <i style="color: brown;">197</i> <img style="margin-bottom: 10px;"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA8xJREFUWIXFl11oHGUUhp8zM7sbo2kTijbBakqMRYlooYYEBUWKZhPTdLO4UEVbEBWpBQsFIVrtNjZgrJbSitSfChWpaKm5iEEbL2wF0SsllILoTSuktqakTUzs7szsHC82aSbZnexuUuK5+n7O977PzJxvvhlYZDht8Ycm2hLVC11vLMbcjsYbPU8HI55b/78AINoDRByRs0sOoImEqcojAOJx55IDMDZWBlgAIrpLk8kFaS0YQAYHJ4FzAAIPp38e+kBBlgwAQISea214zmmNHygVYlEAoab7DgucnO6r6jY7Gu+ZZ8niAOzHYuvS0c5vpvuSTHoZdM/sLO2yW+LPXHcATSRuUEO+QFjlHy9LXTmVkyv6nrYmbr6uAM545gngDpQ6v7hTvnxdnvRlNu4LxehaxQKoaPtUs9z23MF0NPa2CJXqyet585VHgYL1UDQAKrWIZtvCWpCjqsHpAnXFyJZQhLqs+FwAMtONVGusNdXWuaYkAE0kTH9fhIslAozMiMlrkpHeogHS0fib6fHMwVlAMFySvRJSkIn1HSsFmhBtn2yJ1xQEyJ7t+oqgT+r6zhUzF8E/JQEIa+2Wzl9CIesnsrVmWWQPL3/kFKGlmU1AGCFsW/KxdnRstlNmLUqsJIApCJipVBG9HzjqT8m5A6La5OvEbNscx+A0UA0gt9ZgNDdCeXmuYTiMrK4N5FHRlXPH8tSAVgUJGA80ETr4DubTmwgd2o9ULp+ZjESwundibnw8EABPcrTzAMhk0Hoz1o576BOcbTvQs38iDzbPmO9+FRwb9/2PggGEscIAyh9B6/XSKMa99yB3rUFuXwUXR3zmDm53LzhOsL9ozk7KBTDk1yCBzOEjUFWJ1bUD7/sf8E6fKdocAM8YyoGaO6AbNpTbjnUBqJhXrIQrnwo3bNq3yMDAZf9g7i7o7/9XVT4r2nzPXqytzxPu/5LQ/l6kOqfQs6Hy9VzzvAAAjmoS5UpB8+5ejOZGpOFunBdfxvvtd8xn836LZEB25pvIC1Ax2Pe3CNsLmeM4cNON6Ohl9PwFGD6f//0A+yInjp8pGgAg/G3fEWCvf8zavhWupnB3v3XtmXunfkRWVBH69EPMLU/hHeubKzUQrrC6gnzm/YJVEDsa3wX6BiBSU42OjICbmZ0YCiH1dejwXzA+7p/pC6eszXLy2MSCAKYj3RqLoXIAuK2YfGBCVZKRE1/tE/9hsFAAyG7PtGO9JLAFaAhIOwd8Hg6570p//6VidEv+kwFItXTUC2aDoqsNg6uKMaquDJV9dzzwLRoU/wGxqGF2wiMubwAAAABJRU5ErkJggg== "
+                                    width="20px" height="20px" alt="">đang sale
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+                            <div class="card">
+                                <a href="">
+                                    <img src='https://cdn2.yame.vn/pimg/ao-thun-sweater-j-p-s-19-0022139/5485d4da-cf9c-4501-cead-001a5a5ddea1.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-thun-sweater-j-p-s-19-0022139/74e6c7b1-65e9-1400-3cc2-001a5a33df51.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            <div class="watchclock">
+                                TG<div class="item">
+                                    <span id="days6">Days</span>
+                                </div>
+                                <div class="item">
+                                    <span id="hours6">Hours</span>
+                                </div>
+                                <div class="item">
+                                    <span id="minutes6">Minutes</span>
+                                </div>
+                                <div class="item">
+                                    <span id="seconds6">Seconds</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 15px;">
+                                VIP <del>427</del> <i style="color: brown;">277</i> <img style="margin-bottom: 10px;"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA8xJREFUWIXFl11oHGUUhp8zM7sbo2kTijbBakqMRYlooYYEBUWKZhPTdLO4UEVbEBWpBQsFIVrtNjZgrJbSitSfChWpaKm5iEEbL2wF0SsllILoTSuktqakTUzs7szsHC82aSbZnexuUuK5+n7O977PzJxvvhlYZDht8Ycm2hLVC11vLMbcjsYbPU8HI55b/78AINoDRByRs0sOoImEqcojAOJx55IDMDZWBlgAIrpLk8kFaS0YQAYHJ4FzAAIPp38e+kBBlgwAQISea214zmmNHygVYlEAoab7DgucnO6r6jY7Gu+ZZ8niAOzHYuvS0c5vpvuSTHoZdM/sLO2yW+LPXHcATSRuUEO+QFjlHy9LXTmVkyv6nrYmbr6uAM545gngDpQ6v7hTvnxdnvRlNu4LxehaxQKoaPtUs9z23MF0NPa2CJXqyet585VHgYL1UDQAKrWIZtvCWpCjqsHpAnXFyJZQhLqs+FwAMtONVGusNdXWuaYkAE0kTH9fhIslAozMiMlrkpHeogHS0fib6fHMwVlAMFySvRJSkIn1HSsFmhBtn2yJ1xQEyJ7t+oqgT+r6zhUzF8E/JQEIa+2Wzl9CIesnsrVmWWQPL3/kFKGlmU1AGCFsW/KxdnRstlNmLUqsJIApCJipVBG9HzjqT8m5A6La5OvEbNscx+A0UA0gt9ZgNDdCeXmuYTiMrK4N5FHRlXPH8tSAVgUJGA80ETr4DubTmwgd2o9ULp+ZjESwundibnw8EABPcrTzAMhk0Hoz1o576BOcbTvQs38iDzbPmO9+FRwb9/2PggGEscIAyh9B6/XSKMa99yB3rUFuXwUXR3zmDm53LzhOsL9ozk7KBTDk1yCBzOEjUFWJ1bUD7/sf8E6fKdocAM8YyoGaO6AbNpTbjnUBqJhXrIQrnwo3bNq3yMDAZf9g7i7o7/9XVT4r2nzPXqytzxPu/5LQ/l6kOqfQs6Hy9VzzvAAAjmoS5UpB8+5ejOZGpOFunBdfxvvtd8xn836LZEB25pvIC1Ax2Pe3CNsLmeM4cNON6Ohl9PwFGD6f//0A+yInjp8pGgAg/G3fEWCvf8zavhWupnB3v3XtmXunfkRWVBH69EPMLU/hHeubKzUQrrC6gnzm/YJVEDsa3wX6BiBSU42OjICbmZ0YCiH1dejwXzA+7p/pC6eszXLy2MSCAKYj3RqLoXIAuK2YfGBCVZKRE1/tE/9hsFAAyG7PtGO9JLAFaAhIOwd8Hg6570p//6VidEv+kwFItXTUC2aDoqsNg6uKMaquDJV9dzzwLRoU/wGxqGF2wiMubwAAAABJRU5ErkJggg== "
+                                    width="20px" height="20px" alt="">đang sale
+                            </p>
+                        </div>
+                    </div>
+                    <p class="product"><a href="#">Xem thêm các sản phẩm khác</a></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- sản pẩm hai -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <h2 class="opensell">MỞ BÁN</h2>
+                    <p>Mở bán nhiều sản phẩm mới</p>
+                    <div class="row">
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+                            <div class="card">
+                                <a href="">
+                                    <img src='https://cdn2.yame.vn/pimg/ao-khoac-cardigan-j-p-s-24-0022149/b32b6d51-23ab-4001-eca2-001a5a4725dc.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-khoac-cardigan-j-p-s-24-0022149/cc2292cc-c37b-be00-f894-001a5a3d6899.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            367
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+                            <div class="card">
+                                <a href="">
+                                    <img src='https://cdn2.yame.vn/pimg/ao-khoac-hoodie-j-p-s-12-0022121/8ff181bb-3d38-3c01-b881-001a5a46b5fb.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-khoac-hoodie-j-p-s-12-0022121/0f3d4124-d771-8000-2f20-001a5a395c63.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            254
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+
+                            <div class="card">
+                                <a href="#"> <img
+                                        src='https://cdn2.yame.vn/pimg/ao-thun-sweater-j-p-s-35-0022158/9c37507b-8454-3b01-2a62-001a5a469d92.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-thun-sweater-j-p-s-35-0022158/6c2701b4-8e6d-7000-44e3-001a5a38e43f.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            304
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+
+                            <div class="card">
+                                <a href=""> <img
+                                        src='https://cdn2.yame.vn/pimg/ao-thun-co-tron-j-p-s-38-0022162/1024d84c-eb50-3501-5d63-001a5a46197d.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-j-p-s-38-0022162/0f5f3fb8-e36c-2200-1e24-001a5a344e61.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            381
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+                            <div class="card">
+                                <a href="">
+                                    <img src='https://cdn2.yame.vn/pimg/ao-thun-co-tru-j-p-s-33-0022155/3afb7fd6-06f1-3f01-2b2c-001a5a470ee1.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tru-j-p-s-33-0022155/1aa1b4f6-e27d-af00-3820-001a5a3c381d.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            289
+                        </div>
+                        <div class="col-6 col-md-4 tainha" data-aos="fade-up">
+                            <div class="card">
+                                <a href="">
+                                    <img src='https://cdn2.yame.vn/pimg/ao-thun-sweater-j-p-s-19-0022139/5485d4da-cf9c-4501-cead-001a5a5ddea1.jpg?w=540&h=756'
+                                        alt=' '>
+
+                                    <img src="https://cdn2.yame.vn/pimg/ao-thun-sweater-j-p-s-19-0022139/74e6c7b1-65e9-1400-3cc2-001a5a33df51.jpg?w=540&h=756&c=true&ntf=false"
+                                        alt="" class="card-body">
+                                </a>
+                            </div>
+                            373
+                        </div>
+                    </div>
+                    <p class="product"><a href="#">Xem thêm các sản phẩm khác</a></p>
+
+
+                </div>
+                <div class="col-6" data-aos="fade-left">
+                    <div class="main-carousel omensupermen">
+                        <div class="carousel-cell">
+                            <a href="">
+                                <img src="https://cmsv2.yame.vn/uploads/7c7c8654-55bf-47b6-a385-5e4f1f115d34/Banner_MB_07.07_(1053x1260_)_06.jpg?quality=80&w=700&h=0"
+                                    height="100%" alt="">
+                            </a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="">
+                                <img src="https://cmsv2.yame.vn/uploads/b16d7689-1e7a-47ef-a247-df5337251a52/Banner_MB_07.07_(1053x1260_)_05.jpg?quality=80&w=700&h=0"
+                                    height="100%" alt="">
+                            </a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="">
+                                <img src="https://cmsv2.yame.vn/uploads/7a832376-70a3-4678-a02d-948eef566890/Banner_MB_07.07_(1053x1260_)_04.jpg?quality=80&w=700&h=0"
+                                    height="100%" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- danh sách sản phẩm 1(áo)-->
+        <div class="container">
+            <p class="listPontsize">@HANGOUT.COFFEE @STAYATHOME</p>
+            <div class="main-carousel zatabay">
+                <div class="carousel-cell">
+                    <div class="testarreay">
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/7910ad23-37f8-496e-89da-0b33384282c6/Untitled-7.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/5d6ac892-b30e-4730-8e93-6a909983db9e/Untitled-4.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/275728bd-655a-46f1-96e8-7cb57394810d/Untitled-13.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class=" carousel-cell">
+                    <div class="testarreay">
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/46b22463-cf99-429f-8117-d1dd3a82a21f/Untitled-2.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/a4e56b85-851d-4002-a7b0-634a35ca341f/Untitled-8.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/69d7cc23-88e5-418f-ab0e-c04b3bc7f118/MINH3368__ch%e1%bb%8dnm.JPG?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testarreay">
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/7a4b910f-eaa0-46c5-a02e-757dc5527c42/BS_3.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/ae0e1e5f-6af1-4a1d-b953-c572943f207a/H%c3%a2n_1.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/36cde20e-a092-4ef1-9bf5-9682c6bcfebd/L%c3%aa_1.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <br>
+        <!-- sản phẩm : áo thun -->
+        <div class="container">
+            <div class=" row ">
+                <p class="listPontsize">BEST T-SHIRT</p>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-thun-co-tron-12vahdt-long-van-thien-o-ver5-0021828/aca2b416-a3f9-0400-04bf-001a1e915714.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-12vahdt-long-van-thien-o-ver5-0021828/7d21d039-65d7-bf00-0049-0019c039278b.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    277
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-thun-co-tru-12vahdt-van-xuan-kien-quoc-ver11-0021726/1c29c944-5c8f-5300-6b93-001a33dec67e.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tru-12vahdt-van-xuan-kien-quoc-ver11-0021726/5d8c510a-3a37-5400-9d88-001a33dec699.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    275
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-thun-co-tru-the-days-eye-36-0022101/c8100bfa-8339-3601-577b-001a4f461d15.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tru-the-days-eye-36-0022101/61b8f5b3-c45b-3701-45ce-001a4f461d32.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    327
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-thun-co-tru-on-gian-y-nguyen-ban-ver144-0021848/e1a1a444-e963-9402-3f42-001a33f9824d.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tru-on-gian-y-nguyen-ban-ver144-0021848/70da0c3c-3f60-9502-e855-001a33f98269.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    197
+                </div>
+            </div>
+            <p class="product"><a href="#">Xem thêm các sản phẩm khác</a></p>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <!-- áo thun 2 -->
+        <div class="container">
+            <div class=" row ">
+                <p class="listPontsize">BEST SHIRT</p>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/so-mi-nam-no-style-td-km18-0018246/8c0fe088-005b-0200-3f26-001a20115d2c.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/so-mi-nam-no-style-td-km18-0018246/c6eecac0-d2af-1000-e5ba-00195ca27704.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    255
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-so-mi-cuban-j-p-s-5-0022122/325d9160-6da2-3601-55de-001a5a4630b8.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-so-mi-cuban-j-p-s-5-0022122/6e67e0c5-f423-3100-99d1-001a5a34ab01.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    397
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-so-mi-tay-ngan-the-days-eye-09-0022061/6ba513ec-06c2-8200-1314-001a443ebe4a.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-so-mi-tay-ngan-the-days-eye-09-0022061/f08ec7bf-be23-8300-e937-001a443ebe67.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    287
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-so-mi-cuban-the-days-eye-27-0022081/329a0896-4c24-0200-c95b-001a4f32cdfd.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-so-mi-cuban-the-days-eye-27-0022081/db7cb957-6273-0300-7b32-001a4f32ce27.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    257
+                </div>
+            </div>
+            <p class="product"><a href="#">Xem thêm các sản phẩm khác</a></p>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- BEST JACKET -->
+        <div class="container">
+            <div class=" row ">
+                <p class="listPontsize">BEST JACKET</p>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-khoac-classic-on-gian-y-nguyen-ban-ver6-0020376/c34819ab-173d-0800-58c1-001a19f80c93.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-khoac-classic-on-gian-y-nguyen-ban-ver6-0020376/ccf7879c-9cbf-3d01-eff5-0018a182fb7f.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    385
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-khoac-classic-on-gian-y-nguyen-ban-ver67-0021335/62ccd3e1-7c6c-0100-bbb7-001a2331730d.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-khoac-classic-on-gian-y-nguyen-ban-ver67-0021335/770a4c4b-295b-0200-b86e-001a23317329.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    457
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-khoac-cardigan-j-p-s-24-0022149/b32b6d51-23ab-4001-eca2-001a5a4725dc.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-khoac-cardigan-j-p-s-24-0022149/cc2292cc-c37b-be00-f894-001a5a3d6899.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    697
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/ao-khoac-classic-y-nguyen-ban-18-ver48-0021327/c6bbd297-35d2-1000-e892-001a39386969.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/ao-khoac-classic-y-nguyen-ban-18-ver48-0021327/eeb65e7f-6471-1100-b6f4-001a39386980.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    597
+                </div>
+            </div>
+            <p class="product"><a href="#">Xem thêm các sản phẩm khác</a></p>
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <!-- danh sách sản phẩm 2(quần) -->
+    <section>
+        <div class="container">
+            <p class="listPontsize">@HANGOUT.COFFEE @STAYATHOME</p>
+            <div class="main-carousel baracell">
+                <div class="carousel-cell">
+                    <div class="testarreay">
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/af00f207-09ca-46f9-9ebb-315819abfcec/ch%c6%b0a_1.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/a60f7710-6f70-47cf-aa66-1fc7bf22e60f/7-21953,_22003,_21921.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/29f70b44-8538-4e0b-b441-e7afabc477f7/21716_-_19786.JPG?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class=" carousel-cell">
+                    <div class="testarreay">
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/b4996208-c561-4cb4-91a8-b5a7ee64bd33/ch%c6%b0a_3.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/a5779f57-370e-4ef1-a562-f2aeb2555ada/20938_-_21697.JPG?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/2d290f64-9d98-4891-9147-a77498dee290/19959.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testarreay">
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/1a61d5a0-4de5-4aed-8cf1-85a0c60fa8ad/21464_-_21273.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/7c9ac1fc-64c6-4090-a133-34ff24a05445/21422_-_21027.jpg?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="erol"
+                                src="https://cmsv2.yame.vn/uploads/758308d8-d73b-49c9-a561-9c0438805925/21467_-_21369_-_20979.JPG?quality=80&w=700&h=0"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <br>
+        <!-- BEST PANTS-JEANS -->
+        <div class="container">
+            <div class=" row ">
+                <p class="listPontsize">BEST PANTS-JEANS</p>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/quan-dai-vai-the-style-of-no-style-60-0021997/c0ffbbeb-2032-de01-b344-001a33f0d352.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/quan-dai-vai-the-style-of-no-style-60-0021997/98182eba-d411-df01-208f-001a33f0d369.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    397
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/quan-dai-vai-the-days-eye-12-0022082/15165d8d-4a2b-df00-8fff-001a444265b5.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/quan-dai-vai-the-days-eye-12-0022082/e5b8aea5-31a0-e000-148b-001a444265d2.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    397
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/quan-dai-trouser-on-gian-y-nguyen-ban-ver14-0020877/344d7232-14c7-0e00-5689-00195229f908.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/quan-dai-trouser-on-gian-y-nguyen-ban-ver14-0020877/1ca3dbf6-9db1-0f00-915a-00195229f91d.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    397
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/quan-dai-vai-on-gian-y-nguyen-ban-ver28-0021497/9a0c2320-0d26-5400-9366-001a1de8d985.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/quan-dai-vai-on-gian-y-nguyen-ban-ver28-0021497/8b184407-56e8-9800-bebc-00199f344be7.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    397
+                </div>
+            </div>
+            <p class="product"><a href="#">Xem thêm các sản phẩm khác</a></p>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- BEST SHORT -->
+        <div class="container">
+            <div class=" row ">
+                <p class="listPontsize">BEST SHORT</p>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/quan-short-on-gian-y-nguyen-ban-ver20-0020789/da5ae0c6-99b5-1000-5f91-001a19f8da72.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/quan-short-on-gian-y-nguyen-ban-ver20-0020789/9bbe41d0-4d46-1101-82b0-001936b73923.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    287
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/quan-short-on-gian-y-nguyen-ban-ver21-0020990/c7f44d17-f7de-6700-74f0-001a1dec5a4a.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/quan-short-on-gian-y-nguyen-ban-ver21-0020990/47c17859-6ef3-3300-4a1e-0019312e7095.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    227
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/quan-short-the-style-of-no-style-62-0022000/52dec186-0eb1-1c01-3640-001a396290e4.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/quan-short-the-style-of-no-style-62-0022000/35951131-6018-1d01-abf2-001a396290fd.jpg?w=540&h=756&c=true"
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>277
+                </div>
+                <div class="col-3 padding_shirt" data-aos="fade-up">
+                    <div class="listEvent">
+                        <a href="">
+                            <img src='https://cdn2.yame.vn/pimg/quan-short-the-style-of-no-style-69-0022009/62cb4b45-3165-6f01-2706-001a3964fbb6.jpg?w=540&h=756'
+                                width="100%" alt=' '>
+
+                            <img src="https://cdn2.yame.vn/pimg/quan-short-the-style-of-no-style-69-0022009/fe1d6bf8-4f97-7001-08f9-001a3964fbcd.jpg?w=540&h=756&c=true "
+                                alt="" class="listEvent-body">
+                        </a>
+                    </div>
+                    197
+                </div>
+            </div>
+            <p class="product"><a href="#">Xem thêm các sản phẩm khác</a></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </section>
+    <section>
+        <!-- thông tin sư kiện -->
+        <!-- 1 -->
+        <div class="container" data-aos="fade-right">
+            <div class="row row align-items-center">
+                <div class="col-5">
+                    <div>
+                        <a href=""><img
+                                src="https://cmsv2.yame.vn/uploads/ac40c987-cbf4-4a6e-b68e-b7b5b1dfa051/THUMB1.jpg?quality=80&w=0&h=0"
+                                width="100%" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <h2 class="shoppingEvent">THE STYLE OF NOSTYLE</h2>
+                    <p>Bộ sưu tập NHIỀU NHẤT và RẺ NHẤT của YaMe trong năm 2023 với hơn 200.000 sản phẩm, 183 mẫu mã,
+                        hơn 50
+                        dòng sẵn phẩm khác nhau, màu sắc thì ko đếm nổi</p>
+                    <a class="shoppingEvent_selective" href="">Mua ngay bây giờ</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <!-- 2 -->
+        <div class="container" data-aos="fade-right">
+            <div class="row row align-items-center">
+                <div class="col-5">
+                    <div>
+                        <a href=""><img
+                                src="https://cmsv2.yame.vn/uploads/41b364dc-84f8-4aac-8ffb-a2ce0f407dfc/THUMB1.jpg?quality=80&w=0&h=0"
+                                width="100%" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <h2 class="shoppingEvent">THE DAY'S EYE</h2>
+                    <p>Bắt nguồn từ "Saxon day's eye" có nghĩa là “con mắt ban ngày”. Có lẽ vì hoa nở cùng với ánh sáng
+                        ban
+                        mai rồi khép lại những cánh trắng khi chiều xuống: chính là Daisy</p>
+                    <a class="shoppingEvent_selective" href="">Mua ngay bây giờ</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <!-- 3 -->
+        <div class="container" data-aos="fade-right">
+            <div class="row row align-items-center">
+                <div class="col-5">
+                    <div>
+                        <a href=""><img
+                                src="https://cmsv2.yame.vn/uploads/d4c8d1a0-dcdc-408b-b853-48411d5f291a/thumb_jbs.jpg?quality=80&w=0&h=0"
+                                width="100%" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <h2 class="shoppingEvent">JAPANESE HORROR STORIES</h2>
+                    <p>Đã lến lúc nghe YaMe về "Những câu chuyện kinh dị Nhật Bản" về bộ ba Quỷ Thần đầy lôi cuốn trong
+                        truyền thuyết. Hồ ly Kisune, Tengu hay Oni sẽ thao túng tâm lý bạn?</p>
+                    <a class="shoppingEvent_selective" href="">Mua ngay bây giờ</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container-fluid" style="background-color:black ;">
+            <div class="row justify-content-center">
+                <div class="col-4  text-center" style="margin: 20px;">
+                    <a href="#"><img src="https://res.yame.vn/Content/images/yame-f-logo-white.png" alt=""></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4  text-center datapay">
+                    Đặt và thu tiền tận nơi trên toàn quốc
+                    <div>(028)7370 1441</div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div id="clickauto" class="col-4  text-center datapay">
+                    Xem Thêm Thông Tin Sản Phẩm <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <!-- <div id="omenBig">x</div> -->
+                <div id="informationYame" class=" container row justify-content-center">
+                    <div class="col-12 text-center">Giới thiệu về YaMe.vn</div>
+                    <div class="col-12 text-center">Tuyển dụng</div>
+                    <div class="col-12 text-center">.</div>
+                    <div class="col-12 text-center">Quy chế hoạt động</div>
+                    <div class="col-12 text-center">Điều khoản mua bán</div>
+                    <div class="col-12 text-center">.</div>
+                    <div class="col-12 text-center">Mã Voucher giảm giá</div>
+                    <div class="col-12 text-center">Đặt hàng và thu tiền tận nơi toàn quốc</div>
+                    <div class="col-12 text-center">(028) 7307 1441</div>
+                    <div class="col-12 text-center">CSKH</div>
+                    <div class="col-12 text-center">Than phiền/Chăm sóc khách hàng</div>
+                    <div class="col-12 text-center">FAQ</div>
+                    <div class="col-12 text-center">Vận chuyển</div>
+                    <div class="col-12 text-center">Chính sách đổi trả</div>
+                    <div class="col-12 text-center">Chính sách bảo hành</div>
+                    <div class="col-12 text-center">Khách hàng VIP</div>
+                    <div class="col-12 text-center">Đối tác cung cấp</div>
+
+
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row justify-content-between">
+                    <div class="col-3 datapay"><i class="fa-solid fa-signs-post"></i>TP.Hồ Chí Minh
+                        <!-- <div style="font-size: 12px;"><i class="fa-solid fa-shirt"></i>Yame Q.10: 770F, Sư Vạnh Hạnh(nd)
+                        </div>
+                        <div style="font-size: 12px;"><i class="fa-solid fa-shirt"></i>Yame Q.5: Nguyễn Trãi </div> -->
+
+                    </div>
+                    <div class="col-3 datapay"><i class="fa-solid fa-signs-post"></i>Tây Nam BỘ</div>
+                    <div class="col-3 datapay"><i class="fa-solid fa-signs-post"></i>Đông Nam Bộ & Tây Nguyên</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-9 datapay">
+                        <div>&#169;2023-CÔNG TY TNHH YAME VN</div>
+                        <p style="font-size: 10px; margin: 0;">Giấy CNĐKDN: 0310874914-Ngày cấp: 25/11/2011-cơ quan cấp:
+                            Phòng đăng ký
+                            kinh doanh-sở kế hoạch và
+                            đầu tư TP.HCM </p>
+                        <p style="font-size: 10px; margin: 0;">Địa chỉ đăng ký kinh doanh:766/3B-3C Sư Vạnh Hạnh(Nối
+                            dài),
+                            phường 12,
+                            Quận 10, TP.HCM-Điện
+                            thoại:(028)7370 1441-Email:cskh@yame.vn</p>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><img src="https://res.yame.vn/dathongbao.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <select>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="mysql">MySQL</option>
+        <option value="php">PHP</option>
+    </select> -->
+</body>
+<!-- đồ hồ -->
+<script src="clock.js"></script>
+<!-- bootrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+<!-- plikity -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- aos js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="main.js"></script>
+
+</html>

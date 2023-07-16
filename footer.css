@@ -1,0 +1,35 @@
+.datapay {
+    color: white;
+}
+
+/* đồng hồ */
+.watchclock {
+    display: flex;
+
+}
+
+
+
+#informationYame {
+    color: white;
+    display: none;
+}
+
+/* .click {
+    display: block;
+} */
+
+#clickauto {
+    color: aqua;
+}
+
+/* #clickauto:hover {
+    color: rgb(255, 136, 0);
+} */
+
+#omenBig {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 0 0 0 300px;
+}
